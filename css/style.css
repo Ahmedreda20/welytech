@@ -1312,7 +1312,7 @@ body, html {
 .container_all .terms_container ul li {
   padding: 15px;
   background-color: #fff;
-  max-width: 1190px;
+  width: 100%;
   border-radius: 12px;
   box-shadow: 0 0 30px #9399AE20;
   -webkit-box-shadow: 0 0 30px #9399AE20;
