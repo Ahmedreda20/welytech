@@ -7,10 +7,9 @@
    <link rel="icon" href="img/icon.png" type="image/png">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="css/awesome.css">
-   <title>WelyTech - Support | Single file</title>
+   <title>WelyTech - Support | Log in</title>
 </head>
 <body>
-   
    <!-- header start component -->
    <header class="header_wrapper">
       <div class="header_box ">
@@ -119,58 +118,36 @@
 
    <!-- page conent conainter -->
    <section class="container_all wrapper_responsive_lg container_height">
+      
+      <div class="auth_container">
+         <h4 class="title recharge_title">
+            Recharge your account balance
+         </h4>
+         <p class="content">
+            You can recharge your balance and use funds anytime for instant buying files and membership packages.
+         </p>
+         
+        
 
-      <div class="action_box">
-         <a href="./single_folder.html">
-            <img src="img/back-arrow.svg" alt="arrow icon" width="30">
-            <span class="title">Back</span>
-         </a>
-      </div>
-
-      <div class="folders_container">
-
-         <div class="item_box flex_elem">
-            <img src="img/file.svg" alt="item image">
-            <div class="content">
-               <h4 class="title">
-                  <a href="/single_file.html">SAMSUNG</a>
-               </h4>
-               <p class="content_folder">
-                  4FILES - BOOT+SBOOT - COMBINATION E 
-               </p>
-
-               <div class="item_details">
-                  <ul>
-                     <li>
-                        <span class="item_par">
-                           <i class="fas fa-tag free_type_icon"></i>
-                           <span class="content">FREE</span>
-                        </span>
-                     </li>
-                     <li>
-                        <span class="iten_par">
-                           <i class="far fa-eye views_icon"></i>
-                           <span class="content">4040</span>
-                        </span>
-                     </li>
-                     <li>
-                        <span class="iten_par download_icon">
-                           <i class="fas fa-cloud-download-alt"></i>
-                           <span class="content">5000</span>
-                        </span>
-                     </li>
-                  </ul>
-                  <a href="./redirect.html" class="download_btn">
-                      DOWNLOAD FILE
-                  </a>
-               </div>
+         <form class="recharge_container auth_form">
+            <div class="form_group">
+               <label for="amount" class="normal_lab">Amount <span class="required">*</span></label>
+               <input type="number" class="normal_elem" dir="auto" placeholder="USD" required autocomplete="off" autocorrect="false" spellcheck="false" name="amount" min="0" minlength="1" step="0.1">
             </div>
-         </div>
-
-          
-         
-         
+            <div class="form_group note">
+            After successful transaction we will add funds to your account balance.
+            <span class="note_title">Your Current Balance:</span>
+            
+             <span class="balance">
+                <span class="value"> 0.00</span>USD
+             </span>
+            </div>
+            <div class="form_group">
+               <button name="button" class="btn_submit" aria-label="button">Pay By PayPal</button>
+            </div>
+         </form>
       </div>
+
    </section>
 
    <!-- footer container -->
@@ -222,5 +199,8 @@
    </footer>
    <!-- scripts -->
    <script src="js/main_all.js" type="text/javascript"></script>
+   <script src="js/auth.js" type="text/javascript"></script>
+
+   
 </body>
 </html>
